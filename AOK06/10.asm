@@ -10,5 +10,6 @@
 		addi $t2, $t2, 100	#na $t2 mu dodavame 100
 		sw $t2, ($t1)		#go zachuvuvame $t2 vo memorija na pozicija a[i]
 		addi $s3, $s3, 1	# go zgolemuvame brojacot za eden
+		j jamka
 	end:
 	#kraj na zadachata
