@@ -12,9 +12,9 @@
 		lw $t4, 0($a0)			# $t4 - broj shto e naogja na i-ta pozicija vo ramki na niza
 		div $t4, $t5			#delenje na brojot shto se naogja na i-ta pozicija so 3
 		mfhi $t6			#dobivanje na ostatok pri deletenje od HI register
-		bne $t6, $zero, tocno		#dali ostatokot pri delenje na a[i] so 3 e 0
+		bne $t6, $zero, netocno		#dali ostatokot pri delenje na a[i] so 3 e 0
 			add $t2,$t2,$t4		#ako e nula da se izvrshi ova
-		tocno: 				#ako ne e nula skokni tuka
+		netocno: 			#ako ne e nula skokni tuka
 		addi $t1, $t1, 1		#zgolemi brojac za 1
 		j jamka				#bezusloven jump do pochetok na jamka
 	end:
