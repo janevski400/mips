@@ -20,7 +20,7 @@
 	end:	
 		add $a0, $s1, $zero			#podesuvanje na argumenti za funkcijata
 		jal proizvodNeparni			#povikuvanje na procedura	
-		sw $v0, ($s0)				#zachuvaj go rezultatot od mnozhenjeto na site neparni broevi vo memoriska lokacija $a0 (odnosno $s0)
+		sw $v0, ($s0)				#zachuvaj go rezultatot od mnozhenjeto na site neparni broevi vo memoriska lokacija $s0
 		
 		la $a0,($v0)				#zapishuvanje na adresata na rezultatot od mnozhenjeto na site neparni broevi vo $a0 koja kje bide iskoristena od syscall
 		li $v0, 1				#syscall za pechatenje na integer bara $v0 = 5
