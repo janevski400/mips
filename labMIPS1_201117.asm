@@ -54,7 +54,7 @@
 			mfhi $t5			#vadenje na ostatokot od delenjeto
 			beq $t5, $zero, nemaOstatok	#a ostatokot e 0 togas brojot e paren(ripni do nemaOstatok), a vo sluchaj ostatokot da e razlichen od 0 togash brojot e neparen(prodolzhi so izvrshuvanje na naredna linija).
 				mult $t6, $t3		#mnozhenje na stariot proizvod so neparniot broj
-				mflo $t6		#vadenje na rezultatot od mnozhenjeto od LO register (mozhebi kje ima problem dokolku brojot zafakja povekje od 32 bita) 
+				mflo $t6		#vadenje na rezultatot od mnozhenjeto od LO register (kje ima problem dokolku brojot zafakja povekje od 32 bita) 
 			nemaOstatok: 
 			addi $t0, $t0, 1		#zgolemuvanje na brojachot za 1
 			j loop2				#vrati se do loop2
