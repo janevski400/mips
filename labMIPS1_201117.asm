@@ -40,7 +40,7 @@
 	syscall						#kraj na programa
 
 	proizvodNeparni:
-		#$a1 - broj na elementi vo nizata
+		#$a0 - broj na elementi vo nizata
 		li $t0,0				#setiranje na $t0 na 0
 		li $t2,0				#seturanje na $t1 na 0
 		li $t3,0				#seturanje na $t1 na 0
